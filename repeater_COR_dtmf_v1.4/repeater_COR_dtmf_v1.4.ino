@@ -223,7 +223,7 @@ void trigger_control_2() {
   if (digitalRead(rx_signal) == 0 && tx_enable == 0)  {
     Serial.println("RX detected");
     Serial.println("TX is disabled!");
-    return;        
+    //return;        
   }
   if (digitalRead(rx_signal) == 1 && tone_ready == 0)  {
     return;        
